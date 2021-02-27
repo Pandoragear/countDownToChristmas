@@ -14,12 +14,17 @@ const months = [
     
 ];
 
-
 const weekdays = [
     "Sunday",
     "Monday",
     "Tuesday", 
     "Wednesday",
     "Thursday", 
-    "Friday",
+    "Friday", 
 ];
+
+const dayLeft = document.querySelector(".dayLeft");
+const deadline = document.querySelector(".deadline");
+const items =  document.querySelectorAll(".deadline-format h4")
+
+console.log(items);  
