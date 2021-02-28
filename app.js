@@ -21,6 +21,7 @@ const weekdays = [
     "Wednesday",
     "Thursday", 
     "Friday", 
+    "Saturday",
 ];
 
 // defining the name to variable 
@@ -43,4 +44,7 @@ month = months[month];
 
 const date = futureDate.getDate();
 
-dayLeft.textContent = `Count down till Christmas ${month}, ${date} ${year} ${hours}:${minutes}pm!`;
+const weekday = weekdays[futureDate.getDay()];
+
+
+dayLeft.textContent = `Count down till Christmas - ${weekday} ${month}  ${date}, ${year} at ${hours}:${minutes}pm!`;
