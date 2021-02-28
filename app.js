@@ -37,5 +37,7 @@ const year = futureDate.getFullYear();
 const hours = futureDate.getHours();
 const minutes = futureDate.getMinutes();
 
+let month = futureDate.getMonth();
+month = months[month];
 
-dayLeft.textContent = `Count down till Christmas  ${hours}:${minutes}pm, ${year} `;
+dayLeft.textContent = `Count down till Christmas ${month}, ${year} ${hours}:${minutes}pm!`;
