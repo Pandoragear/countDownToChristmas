@@ -29,7 +29,8 @@ const deadline = document.querySelector(".deadline");
 const items =  document.querySelectorAll(".deadline-format h4")
 
 //Date
-let futureDate = new Date(2021,11,24, 59,59,59);
+// Date = year, Month, Date, hours, minutes 
+let futureDate = new Date(2021, 11, 24, 11,59,59);
 console.log(futureDate);
 
 const year = futureDate.getFullYear();
@@ -40,4 +41,6 @@ const minutes = futureDate.getMinutes();
 let month = futureDate.getMonth();
 month = months[month];
 
-dayLeft.textContent = `Count down till Christmas ${month}, ${year} ${hours}:${minutes}pm!`;
+const date = futureDate.getDate();
+
+dayLeft.textContent = `Count down till Christmas ${month}, ${date} ${year} ${hours}:${minutes}pm!`;
