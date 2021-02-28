@@ -32,7 +32,7 @@ const items =  document.querySelectorAll(".deadline-format h4")
 //Date
 // Date = year, Month, Date, hours, minutes 
 let futureDate = new Date(2021, 11, 24, 11,59,59);
-console.log(futureDate);
+
 
 const year = futureDate.getFullYear();
 
@@ -48,3 +48,14 @@ const weekday = weekdays[futureDate.getDay()];
 
 
 dayLeft.textContent = `Count down till Christmas - ${weekday} ${month}  ${date}, ${year} at ${hours}:${minutes}pm!`;
+
+
+// future time in milliSecond
+const futureTime = futureDate.getTime();
+
+function getRemainingTime(){
+    const today = new Date().getTime();
+
+}
+
+getRemainingTime();
